@@ -32,7 +32,7 @@ const BlogPost = () => {
           {/* META ENDS */}
           {/* CONTENT STARTS */}
           <h3>The meaning of currency pairs in Forex</h3>
-          <img src="assets/blog/blog-post-1.jpg" alt="Blog image" />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/59c5UUu1C4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="post-content">
             <p>
               In Forex trading, currency pairs hold significant importance as they represent the relative value of one currency against another.
