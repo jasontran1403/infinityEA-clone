@@ -21,9 +21,15 @@ const Blog = () => {
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
           <Link href="/blog-post" legacyBehavior>
             <a>
-              <span className="img-holder">
-                <img src="assets/blog/blog-post-1.jpg" alt="" />
-              </span>
+              <div className="main-content ">
+                <div className="videocontainer">
+                  <iframe
+                  className="youtube-video"
+                  src="https://www.youtube-nocookie.com/embed/dnnFb9V9uLI"
+                  allowFullScreen=""
+                  />
+                </div>
+              </div> 
               <div className="content">
                 <span className="category">Forex</span>
                 <span className="title">
