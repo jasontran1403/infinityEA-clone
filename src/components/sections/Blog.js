@@ -25,9 +25,9 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Forex</span>
+                <span className="category">Tạo tài khoản</span>
                 <span className="title">
-                  The meaning of currency pairs in Forex.
+                  Hướng dẫn tạo tài khoản Exness.
                 </span>
                 <p>
                   Stay informed with the latest Forex news updates, enabling you to make more accurate investment decisions.
@@ -57,9 +57,9 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Exness</span>
+                <span className="category">Standard Cent</span>
                 <span className="title">
-                  Why Choose Exness: Unveiling the Reasons
+                  Hướng dẫn mở tài khoản trade Exness - Standard Cent
                 </span>
                 <p>
                   Exness is one of the leading and reputable forex brokers in the industry. Established in 2008
@@ -87,9 +87,9 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">About us</span>
+                <span className="category">PassView</span>
                 <span className="title">
-                  Infinity EA - aiming for infinity of Trading Market.
+                  Hướng dẫn thiết lập quyền chỉ xem cho tài khoản Trade
                 </span>
                 <p>
                   Why Infinity EA - Exploring the Significance of Our Name. When our started, and goal ?
@@ -118,9 +118,9 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Forex</span>
+                <span className="category">Nạp tiền</span>
                 <span className="title">
-                  The meaning of currency pairs in Forex.
+                  Hướng dẫn nạp tiền vào tài khoản Exness
                 </span>
                 <p>
                   Stay informed with the latest Forex news updates, enabling you to make more accurate investment decisions.
