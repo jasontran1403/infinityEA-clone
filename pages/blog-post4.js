@@ -32,7 +32,7 @@ const BlogPost = () => {
           {/* META ENDS */}
           {/* CONTENT STARTS */}
           <h3>Infinity EA - aiming for infinity of Trading Market. </h3>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/yoxrePKUllw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="50%" src="https://www.youtube.com/embed/yoxrePKUllw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="post-content">
             <p>
               In the dynamic world of trading, where opportunities seem limitless yet uncertainties abound, the quest for a reliable and profitable solution remains ever-present. 
