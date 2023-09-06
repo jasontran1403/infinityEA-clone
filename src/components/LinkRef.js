@@ -24,13 +24,16 @@ function LinkRef({ isOpen, toggle, current }) {
       "refferal": id
     });
 
+    console.log({current, id});
+    
     let config = {
       method: 'post',
-      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/update-ref',
-      headers: {
+      maxBodyLength: Infinity,
+      url: 'http://localhost:8080/api/v1/auth/update-ref',
+      headers: { 
         'Content-Type': 'application/json'
       },
-      data: data
+      data : data
     };
 
     Axios.request(config)

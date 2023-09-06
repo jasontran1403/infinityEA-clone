@@ -6,18 +6,63 @@ import { normalAlert } from "../Swal";
 
 const About = () => {
   const [networks, setNetworks] = React.useState([]);
-  const [startIndex, setStartIndex] = React.useState(0);
+  const [startIndex1, setStartIndex1] = React.useState(0);
+  const [startIndex2, setStartIndex2] = React.useState(0);
+  const [startIndex3, setStartIndex3] = React.useState(0);
+  const [startIndex4, setStartIndex4] = React.useState(0);
+  const [startIndex5, setStartIndex5] = React.useState(0);
+
   const itemsPerPage = 5;
 
-  const handleNext = () => {
-    setStartIndex((prevStartIndex) => prevStartIndex + itemsPerPage);
+  const handleNextF1 = () => {
+    setStartIndex1((prevStartIndex) => prevStartIndex + itemsPerPage);
   };
 
-  const handlePrev = () => {
-    setStartIndex((prevStartIndex) => prevStartIndex - itemsPerPage);
+  const handlePrevF1 = () => {
+    setStartIndex1((prevStartIndex) => prevStartIndex - itemsPerPage);
   };
 
-  const visibleItems = networks?.F1?.slice(startIndex, startIndex + itemsPerPage);
+  const visibleItemsF1 = networks?.F1?.slice(startIndex1, startIndex1 + itemsPerPage);
+
+  const handleNextF2 = () => {
+    setStartIndex2((prevStartIndex) => prevStartIndex + itemsPerPage);
+  };
+
+  const handlePrevF2 = () => {
+    setStartIndex2((prevStartIndex) => prevStartIndex - itemsPerPage);
+  };
+
+  const visibleItemsF2 = networks?.F2?.slice(startIndex2, startIndex2 + itemsPerPage);
+
+  const handleNextF3 = () => {
+    setStartIndex3((prevStartIndex) => prevStartIndex + itemsPerPage);
+  };
+
+  const handlePrevF3 = () => {
+    setStartIndex3((prevStartIndex) => prevStartIndex - itemsPerPage);
+  };
+
+  const visibleItemsF3 = networks?.F3?.slice(startIndex3, startIndex3 + itemsPerPage);
+
+  const handleNextF4 = () => {
+    setStartIndex4((prevStartIndex) => prevStartIndex + itemsPerPage);
+  };
+
+  const handlePrevF4 = () => {
+    setStartIndex4((prevStartIndex) => prevStartIndex - itemsPerPage);
+  };
+
+  const visibleItemsF4 = networks?.F4?.slice(startIndex4, startIndex4 + itemsPerPage);
+
+  const handleNextF5 = () => {
+    setStartIndex5((prevStartIndex) => prevStartIndex + itemsPerPage);
+  };
+
+  const handlePrevF5 = () => {
+    setStartIndex5((prevStartIndex) => prevStartIndex - itemsPerPage);
+  };
+
+  const visibleItemsF5 = networks?.F5?.slice(startIndex5, startIndex5 + itemsPerPage);
 
   React.useEffect(() => {
     if (localStorage.getItem("email")) {
@@ -69,23 +114,23 @@ const About = () => {
               {Array.isArray(networks.F1) && networks.F1.length > 0 ? (
                 <>
                   <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                    {visibleItems.map((item, id) => (
+                    {visibleItemsF1.map((item, id) => (
                       <li key={id} style={{ paddingLeft: "20px" }}>{startIndex + id + 1} - {item}</li>
                     ))}
                   </ul>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
-                    {startIndex > 0 && (
+                    {startIndex1 > 0 && (
                       <li
                         style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
-                        onClick={handlePrev}
+                        onClick={handlePrevF1}
                       >
                         Previous
                       </li>
                     )}
-                    {startIndex + itemsPerPage < networks.F1.length && (
+                    {startIndex1 + itemsPerPage < networks.F1.length && (
                       <li
                         style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
-                        onClick={handleNext}
+                        onClick={handleNextF1}
                       >
                         Next
                       </li>
@@ -105,15 +150,32 @@ const About = () => {
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content ">
             <ul>Danh sách F2
-              {Array.isArray(networks.F2) && networks.F2.length > 0 ? networks.F2.length > 6 ? <>
-                {networks.F2.slice(0, 6).map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))}
-                <li style={{ paddingLeft: "50px", color: "blue", cursor: "pointer" }}>Next</li>
-              </> : (
-                networks.F1.map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))
+              {Array.isArray(networks.F2) && networks.F2.length > 0 ? (
+                <>
+                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                    {visibleItemsF2.map((item, id) => (
+                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex2 + id + 1} - {item}</li>
+                    ))}
+                  </ul>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
+                    {startIndex2 > 0 && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handlePrevF2}
+                      >
+                        Previous
+                      </li>
+                    )}
+                    {startIndex2 + itemsPerPage < networks.F2.length && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handleNextF2}
+                      >
+                        Next
+                      </li>
+                    )}
+                  </div>
+                </>
               ) : (
                 <li>Không có dữ liệu F2</li>
               )}
@@ -127,16 +189,33 @@ const About = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <ul>Danh sách F3
-              {Array.isArray(networks.F3) && networks.F3.length > 0 ? networks.F3.length > 6 ? <>
-                {networks.F3.slice(0, 6).map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))}
-                <li style={{ paddingLeft: "50px", color: "blue", cursor: "pointer" }}>Load more</li>
-              </> : (
-                networks.F3.map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))
+            <ul>Danh sách F1
+              {Array.isArray(networks.F3) && networks.F3.length > 0 ? (
+                <>
+                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                    {visibleItemsF3.map((item, id) => (
+                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex3 + id + 1} - {item}</li>
+                    ))}
+                  </ul>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
+                    {startIndex3 > 0 && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handlePrevF3}
+                      >
+                        Previous
+                      </li>
+                    )}
+                    {startIndex3 + itemsPerPage < networks.F3.length && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handleNextF3}
+                      >
+                        Next
+                      </li>
+                    )}
+                  </div>
+                </>
               ) : (
                 <li>Không có dữ liệu F3</li>
               )}
@@ -150,16 +229,33 @@ const About = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <ul>Danh sách F4
-              {Array.isArray(networks.F4) && networks.F4.length > 0 ? networks.F4.length > 6 ? <>
-                {networks.F4.slice(0, 6).map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))}
-                <li style={{ paddingLeft: "50px", color: "blue", cursor: "pointer" }}>Load more</li>
-              </> : (
-                networks.F4.map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))
+            <ul>Danh sách F1
+              {Array.isArray(networks.F4) && networks.F4.length > 0 ? (
+                <>
+                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                    {visibleItemsF4.map((item, id) => (
+                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex4 + id + 1} - {item}</li>
+                    ))}
+                  </ul>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
+                    {startIndex4 > 0 && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handlePrevF4}
+                      >
+                        Previous
+                      </li>
+                    )}
+                    {startIndex4 + itemsPerPage < networks.F4.length && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handleNextF4}
+                      >
+                        Next
+                      </li>
+                    )}
+                  </div>
+                </>
               ) : (
                 <li>Không có dữ liệu F4</li>
               )}
@@ -174,15 +270,32 @@ const About = () => {
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <ul>Danh sách F5
-              {Array.isArray(networks.F5) && networks.F5.length > 0 ? networks.F5.length > 6 ? <>
-                {networks.F5.slice(0, 6).map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))}
-                <li style={{ paddingLeft: "50px", color: "blue", cursor: "pointer" }}>Load more</li>
-              </> : (
-                networks.F5.map((item, id) => (
-                  <li key={id} style={{ paddingLeft: "50px" }}>{item}</li>
-                ))
+              {Array.isArray(networks.F5) && networks.F5.length > 0 ? (
+                <>
+                  <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                    {visibleItemsF5.map((item, id) => (
+                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex5 + id + 1} - {item}</li>
+                    ))}
+                  </ul>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
+                    {startIndex5 > 0 && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handlePrevF5}
+                      >
+                        Previous
+                      </li>
+                    )}
+                    {startIndex5 + itemsPerPage < networks.F5.length && (
+                      <li
+                        style={{ paddingLeft: "20px", color: "blue", cursor: "pointer" }}
+                        onClick={handleNextF5}
+                      >
+                        Next
+                      </li>
+                    )}
+                  </div>
+                </>
               ) : (
                 <li>Không có dữ liệu F5</li>
               )}
