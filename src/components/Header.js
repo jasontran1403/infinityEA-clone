@@ -35,7 +35,7 @@ const Header = () => {
 
     let config = {
       method: 'post',
-      url: 'http://localhost:8080/api/v1/auth/check-ref',
+      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/check-ref',
       headers: {
         'Content-Type': 'application/json'
       },
