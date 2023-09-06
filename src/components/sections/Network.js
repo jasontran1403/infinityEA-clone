@@ -115,7 +115,7 @@ const About = () => {
                 <>
                   <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
                     {visibleItemsF1.map((item, id) => (
-                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex + id + 1} - {item}</li>
+                      <li key={id} style={{ paddingLeft: "20px" }}>{startIndex1 + id + 1} - {item}</li>
                     ))}
                   </ul>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px" }}>
