@@ -6,7 +6,7 @@ import { normalAlert } from "./Swal";
 import { Button, Modal, ModalBody } from "reactstrap";
 
 function LinkRef({ isOpen, toggle, current }) {
-  const [email, setEmail] = React.useState("");
+  const [id, setId] = React.useState("");
   const [isLinkRefModalOpen, setIsLinkRefModalOpen] = React.useState(false);
 
   const toggleLinkRefModal = () => {
@@ -14,14 +14,14 @@ function LinkRef({ isOpen, toggle, current }) {
   };
 
   const handleLink = () => {
-    if (!isValidEmail(email)) {
-      normalAlert("Email không hợp lệ, vui lòng thử lại!", "error");
+    if (!isValidID(id)) {
+      normalAlert("ID không hợp lệ, vui lòng thử lại!", "error");
       return;
     }
 
     let data = JSON.stringify({
       "current": current,
-      "refferal": email
+      "refferal": id
     });
 
     let config = {
@@ -39,14 +39,14 @@ function LinkRef({ isOpen, toggle, current }) {
           normalAlert("Cập nhật người giới thiệu thành công!", "success");
           toggle();
         } else if (response.data.status === 404) {
-          normalAlert("Email người giới thiệu không tồn tại!", "error");
+          normalAlert("ID người giới thiệu không tồn tại!", "error");
         }
       });
   }
 
-  function isValidEmail(email) {
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailRegex.test(email);
+  function isValidID(id) {
+    const idRegex = /^[0-9]+$/;
+    return idRegex.test(id);
   }
 
   return (
@@ -58,9 +58,9 @@ function LinkRef({ isOpen, toggle, current }) {
           </h5>
         </div>
         <ModalBody style={{ color: "black", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <input type="email" id="email" placeholder="Nhập email người giới thiệu..." value={email} style={{ width: "100%" }}
+          <input type="text" id="text" placeholder="Nhập id người giới thiệu..." value={id} style={{ width: "100%" }}
             onChange={(e) => {
-              setEmail(e.target.value);
+              setId(e.target.value);
             }}
           />
           <i className=" modal-title text-red" id="exampleModalLabel">

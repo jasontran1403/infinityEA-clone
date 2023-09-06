@@ -17,14 +17,14 @@ function Signin({ isOpen, toggle }) {
 
   const handleSignin = () => {
     if (email === "" || password === "") {
-      normalAlert("Vui lòng nhập email và mật khẩu để đăng nhập!", "error");
-      return;
-    } else if (!isValidEmail(email)) {
-      normalAlert("Email không hợp lệ, vui lòng thử lại!", "error");
+      normalAlert("Vui lòng nhập id và mật khẩu để đăng nhập!", "error");
       return;
     }
+    // else if (!isValidEmail(email)) {
+    //   normalAlert("Email không hợp lệ, vui lòng thử lại!", "error");
+    //   return;
+    // }
 
-    console.log({ email, password });
     let data = JSON.stringify({
       "email": email,
       "password": password

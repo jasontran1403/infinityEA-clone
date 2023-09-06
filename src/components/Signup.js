@@ -13,20 +13,23 @@ function Signup({ isOpen, toggle }) {
   const [refferal, setRefferal] = React.useState("");
 
   const handleSignup = () => {
-    if (email === "" || password === "" || firstName === "" || lastName === "") {
+    if (email === "" || password === "" || firstName === "" || lastName === "" || refferal === "") {
       normalAlert("Vui lòng nhập thông tin để đăng ký!", "warning");
       return;
     } else if (!isValidEmail(email)) {
       normalAlert("Email không hợp lệ, vui lòng thử lại!", "error");
       return;
+    } else if (!isValidRefferall(refferal)) {
+      normalAlert("ID không hợp lệ, vui lòng thử lại!", "error");
+      return;
     }
 
-    console.log({ email, password });
     let data = JSON.stringify({
       "firstname": firstName,
       "lastname": lastName,
       "email": email,
-      "password": password
+      "password": password,
+      "refferal": refferal
     });
 
     let config = {
@@ -62,6 +65,11 @@ function Signup({ isOpen, toggle }) {
     return emailRegex.test(email);
   }
 
+  function isValidRefferall(id) {
+    const idRegex = /^[0-9]+$/;
+    return idRegex.test(id);
+  }
+
   return (
     <>
       <Modal isOpen={isOpen} toggle={toggle}>
@@ -91,7 +99,7 @@ function Signup({ isOpen, toggle }) {
               setPassword(e.target.value);
             }}
           />
-          <input type="email" id="refferal" placeholder="Nhập người giới thiệu..." value={refferal} style={{ width: "100%" }}
+          <input type="text" id="refferal" placeholder="Nhập người giới thiệu..." value={refferal} style={{ width: "100%" }}
             onChange={(e) => {
               setRefferal(e.target.value);
             }}
