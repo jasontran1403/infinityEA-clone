@@ -29,7 +29,7 @@ function LinkRef({ isOpen, toggle, current }) {
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8080/api/v1/auth/update-ref',
+      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/update-ref',
       headers: { 
         'Content-Type': 'application/json'
       },
