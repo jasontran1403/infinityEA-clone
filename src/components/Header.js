@@ -44,7 +44,6 @@ const Header = () => {
 
     Axios.request(config)
       .then((response) => {
-        console.log(response.data);
         if (response.data == 1) {
           toggleLinkRefModal();
         }
