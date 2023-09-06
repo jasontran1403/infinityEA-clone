@@ -189,7 +189,7 @@ const About = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <ul>Danh sách F1
+            <ul>Danh sách F3
               {Array.isArray(networks.F3) && networks.F3.length > 0 ? (
                 <>
                   <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
@@ -229,7 +229,7 @@ const About = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <ul>Danh sách F1
+            <ul>Danh sách F4
               {Array.isArray(networks.F4) && networks.F4.length > 0 ? (
                 <>
                   <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
