@@ -23,7 +23,7 @@ const About = () => {
     if (localStorage.getItem("email")) {
       let config = {
         method: 'get',
-        url: `http://localhost:8080/api/v1/auth/test/${localStorage.getItem("email")}`
+        url: `https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/test/${localStorage.getItem("email")}`
       };
 
       Axios.request(config)

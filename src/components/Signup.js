@@ -31,7 +31,7 @@ function Signup({ isOpen, toggle }) {
 
     let config = {
       method: 'post',
-      url: 'http://localhost:8080/api/v1/auth/register',
+      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/register',
       headers: {
         'Content-Type': 'application/json'
       },

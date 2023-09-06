@@ -32,7 +32,7 @@ function Signin({ isOpen, toggle }) {
 
     let config = {
       method: 'post',
-      url: 'http://localhost:8080/api/v1/auth/authenticate',
+      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/authenticate',
       headers: {
         'Content-Type': 'application/json'
       },
