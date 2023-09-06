@@ -1,4 +1,56 @@
+import React from "react";
+import Signin from "./Signin";
+import Swal from 'sweetalert2';
+import LinkRef from "./LinkRef";
+import Axios from "axios";
+
 const Header = () => {
+  const [isSignInModalOpen, setIsSignInModalOpen] = React.useState(false);
+  const [isLinkRefModalOpen, setIsLinkRefModalOpen] = React.useState(false);
+
+  const [email, setEmail] = React.useState("");
+
+  const toggleSignInModal = () => {
+    setIsSignInModalOpen(!isSignInModalOpen);
+  };
+
+  const toggleLinkRefModal = () => {
+    setIsLinkRefModalOpen(!isLinkRefModalOpen);
+  };
+
+  React.useEffect(() => {
+    if (!localStorage.getItem("email")) {
+      return;
+    }
+    setEmail(localStorage.getItem("email"));
+  }, []);
+
+  React.useEffect(() => {
+    if (!email) {
+      return;
+    }
+    let data = JSON.stringify({
+      "email": email
+    });
+
+    let config = {
+      method: 'post',
+      url: 'http://localhost:8080/api/v1/auth/check-ref',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: data
+    };
+
+    Axios.request(config)
+      .then((response) => {
+        console.log(response.data);
+        if (response.data == 1) {
+          toggleLinkRefModal();
+        }
+      });
+  }, [email]);
+
   return (
     <header>
       {/* Desktop Menu Starts */}
@@ -23,6 +75,9 @@ const Header = () => {
               </li>
               <li>
                 <span id="blog-link">Blog</span>
+              </li>
+              <li>
+                {email ? <span id="network-link">Network</span> : <span id="sign-in" onClick={toggleSignInModal}>Sign In</span>}
               </li>
             </ul>
           </nav>
@@ -70,10 +125,18 @@ const Header = () => {
                 <span>Blog</span>
               </a>
             </li>
+            <li>
+              <a href="#network">
+                <span>Network</span>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
       {/* Mobile Menu Ends */}
+      {isSignInModalOpen && <Signin isOpen={isSignInModalOpen} toggle={toggleSignInModal} />}
+
+      <LinkRef isOpen={isLinkRefModalOpen} toggle={toggleLinkRefModal} current={email} />
     </header>
   );
 };

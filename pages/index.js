@@ -7,6 +7,7 @@ import Contact from "@/src/components/sections/Contact";
 import Copyright from "@/src/components/sections/Copyright";
 import Facts from "@/src/components/sections/Facts";
 import Home from "@/src/components/sections/Home";
+import Network from "@/src/components/sections/Network";
 import Portfolio from "@/src/components/sections/Portfolio";
 import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
@@ -38,6 +39,8 @@ const Index = () => {
             <Separator type={"up"} />
             <Blog />
             <Separator type={"down"} />
+            <Network />
+            <Separator type={"up"} />
             <Copyright />
           </main>
         </div>
