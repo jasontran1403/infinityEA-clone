@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@/src/components/Header";
 import ScrollBar from "@/src/components/ScrollBar";
 import About from "@/src/components/sections/About";
@@ -18,6 +19,15 @@ const Index = () => {
     jqueryFuntion();
   });
 
+  const [email, setEmail] = React.useState("");
+
+  useEffect(() => {
+    if (!localStorage.getItem("email")) {
+      return;
+    }
+    setEmail(localStorage.getItem("email"));
+  }, []);
+
   return (
     <Fragment>
       <div className="page-content">
@@ -35,12 +45,12 @@ const Index = () => {
             <Separator type={"up"} />
             <Contact />
             <Separator type={"down"} />
-            <Clients />
-            <Separator type={"up"} />
             <Blog />
-            <Separator type={"down"} />
-            <Network />
             <Separator type={"up"} />
+            {email && <>
+              <Network />
+              <Separator type={"down"} /> 
+            </>}
             <Copyright />
           </main>
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Signin from "./Signin";
-import Swal from 'sweetalert2';
 import LinkRef from "./LinkRef";
 import Axios from "axios";
 
@@ -125,9 +124,11 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#network">
+              {email ? <a href="#network">
                 <span>Network</span>
-              </a>
+              </a> : <a href="#network">
+                <span id="sign-in" onClick={toggleSignInModal}>Sign In</span>
+              </a>}
             </li>
           </ul>
         </div>

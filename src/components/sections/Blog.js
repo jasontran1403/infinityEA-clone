@@ -25,7 +25,6 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Tạo tài khoản</span>
                 <span className="title">
                   Hướng dẫn tạo tài khoản Exness.
                 </span>
@@ -57,7 +56,6 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Standard Cent</span>
                 <span className="title">
                   Hướng dẫn mở tài khoản trade Exness - Standard Cent
                 </span>
@@ -87,7 +85,6 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">PassView</span>
                 <span className="title">
                   Hướng dẫn thiết lập quyền chỉ xem cho tài khoản Trade
                 </span>
@@ -118,7 +115,6 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">Nạp tiền</span>
                 <span className="title">
                   Hướng dẫn nạp tiền vào tài khoản Exness
                 </span>
