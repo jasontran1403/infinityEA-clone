@@ -16,7 +16,7 @@ const Switcher = () => {
 
   return (
     <Fragment>
-      {/* <Head>
+      <Head>
         <link rel="stylesheet" href={`css/skins/${color}.css`} />
       </Head>
       <div
@@ -55,7 +55,7 @@ const Switcher = () => {
         onClick={() => setToggle(true)}
       >
         <i className="fa fa-cog" />
-      </div> */}
+      </div>
     </Fragment>
   );
 };
