@@ -59,7 +59,7 @@ const Header = () => {
             <ul>
               <li>
                 <span className="active" id="home-link">
-                  Home 1
+                  Home 
                 </span>
               </li>
               <li>

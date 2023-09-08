@@ -49,6 +49,7 @@ const Index = () => {
             <Separator type={"up"} />
             <Blog />
             <Separator type={"up"} />
+            <Separator type={"up"} />
             <Network />
             <Separator type={"down"} />
             <Copyright />
