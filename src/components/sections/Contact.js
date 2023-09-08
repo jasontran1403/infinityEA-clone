@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
             <i className="fa fa-phone" />
             <p>
-              <span className="small-text">phone</span>
+              <span className="small-text">Số điện thoại</span>
               +84939635089
             </p>
           </div>
@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-location-dot" />
             <p>
-              <span className="small-text">address</span>
+              <span className="small-text">Địa chỉ</span>
               Can Tho, HCMC
             </p>
           </div>
@@ -49,7 +49,7 @@ const Contact = () => {
           {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
-            <span className="small-text">follow me</span>
+            <span className="small-text">Mạng xã hội</span>
             <ul className="social">
               <li>
                 <a href="#">

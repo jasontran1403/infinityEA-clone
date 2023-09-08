@@ -13,7 +13,7 @@ const Portfolio = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              Our Portfolio
+              Sản phẩm 
             </span>
           </span>
         </h3>
