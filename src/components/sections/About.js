@@ -183,7 +183,7 @@ const About = () => {
               <span>
                 <i className="devicon-nodejs-plain" />
               </span>
-              <h4>Xác định điểm vào/thoát lệnh</h4>
+              <h4> vào/thoát lệnh </h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -206,7 +206,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation">
-                Achievements
+                Thành tựu
               </span>
             </span>
           </h3>
@@ -223,11 +223,11 @@ const About = () => {
                   <h4>Infinity 1</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>Oct 2022</span>
+                    <span>10 2022</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span> One-way Trade</span>
+                    <span> Sóng Hồi</span>
                   </p>
                 </div>
               </div>
@@ -240,11 +240,11 @@ const About = () => {
                   <h4>Infinity 4</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>Apr 2023</span>
+                    <span>4 2023</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Reducing negative pos</span>
+                    <span>Giảm vị thế xấu</span>
                   </p>
                 </div>
               </div>
@@ -257,11 +257,11 @@ const About = () => {
                   <h4>Infinity 2</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>Dec 2022</span>
+                    <span>12 2022</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Two-way Trade</span>
+                    <span>Giao dịch 2 chiều</span>
                   </p>
                 </div>
               </div>
@@ -278,7 +278,7 @@ const About = () => {
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Coming Soon...</span>
+                    <span>Đang phát triển</span>
                   </p>
                 </div>
               </div>
@@ -291,11 +291,11 @@ const About = () => {
                   <h4>Infinity 3</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>Mar 2023</span>
+                    <span>3 2023</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Automated del-order</span>
+                    <span>Tự Xóa Lệnh</span>
                   </p>
                 </div>
               </div>
