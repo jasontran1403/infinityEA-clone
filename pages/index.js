@@ -51,7 +51,7 @@ const Index = () => {
             <Separator type={"down"} />
             {email && <>
               <Network />
-              <Separator type={"down"} /> 
+              <Separator type={"up"} /> 
             </>}
             <Copyright />
 
