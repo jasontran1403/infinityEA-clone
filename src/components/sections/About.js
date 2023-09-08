@@ -115,7 +115,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation fadeInUp wow">
-                Features
+                Tính năng
               </span>
             </span>
           </h3>
@@ -129,7 +129,7 @@ const About = () => {
               <span>
                 <i className="devicon-wordpress-plain" />
               </span>
-              <h4>Automated Trading</h4>
+              <h4>Tự động giao dịch</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -137,7 +137,7 @@ const About = () => {
               <span>
                 <i className="devicon-jquery-plain" />
               </span>
-              <h4>24/5 Market Monitoring</h4>
+              <h4>24/5</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -147,7 +147,7 @@ const About = () => {
               <span>
                 <i className="devicon-angularjs-plain" />
               </span>
-              <h4>Risk Management</h4>
+              <h4>Phòng chống rủi ro</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -155,7 +155,7 @@ const About = () => {
               <span>
                 <i className="devicon-drupal-plain" />
               </span>
-              <h4>Protection Level</h4>
+              <h4>Mốc bảo vệ</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -165,7 +165,7 @@ const About = () => {
               <span>
                 <i className="devicon-react-plain" />
               </span>
-              <h4>Real-Time Analytics</h4>
+              <h4>Phân tích real-time</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -173,7 +173,7 @@ const About = () => {
               <span>
                 <i className="devicon-docker-plain" />
               </span>
-              <h4>Strategy Analysis</h4>
+              <h4>Phân tích chiến lược</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -183,7 +183,7 @@ const About = () => {
               <span>
                 <i className="devicon-nodejs-plain" />
               </span>
-              <h4>Precise Entry-Exit Points</h4>
+              <h4>Xác định điểm vào/thoát lệnh</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -191,7 +191,7 @@ const About = () => {
               <span>
                 <i className="devicon-sass-plain" />
               </span>
-              <h4>Diversified Currency Pair</h4>
+              <h4>Đa dạng cặp tiền</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
