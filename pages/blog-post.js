@@ -11,7 +11,7 @@ const BlogPost = () => {
         <i className="fa-solid fa-arrow-left"></i>
       </a>
       <div className="blog-content">
-        <h1>Hướng dẫn đăng kí tài khoản Exness</h1>
+        <h1>Tạo tài khoản</h1>
         {/* ARTICLE STARTS */}
         <div className="main-post">
           {/* META STARTS */}
@@ -22,22 +22,22 @@ const BlogPost = () => {
             </div>
             <div className="d-flex align-items-center">
               <i className="fa-solid fa-tag" />
-              <span>Forex, Currency</span>
+              <span>Đăng kí</span>
             </div>
             <div className="d-flex align-items-center">
               <i className="fa-regular fa-comments" />
-              <span>17 comments</span>
+              <span>hướng dẫn</span>
             </div>
           </div>
           {/* META ENDS */}
           {/* CONTENT STARTS */}
-          <h3>The meaning of currency pairs in Forex</h3>
+          <h3>Hướng dẫn đăng kí tài khoản Exness</h3>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/yoxrePKUllw?si=mowr7TN5_y8D9auu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="post-content">
             <p>
               Bước 1: Truy cập trang web chính thức của Exness
-              Bước 2: Tại giao diện trang chủ, bấm vào mục Đăng Nhập, sau đó chọn Tạo Tài Khoản.
-              Điền các trường cần thiết, sau đó tại mục Mã giới thiệu nhập mã giới thiệu như sau: 
+              <p>Bước 2: Tại giao diện trang chủ, bấm vào mục Đăng Nhập, sau đó chọn Tạo Tài Khoản.</p>
+              <p>Điền các trường cần thiết, sau đó tại mục Mã giới thiệu nhập mã giới thiệu như sau:</p> 
             </p> 
             <p class = "ref-text">
               3hjpuzkltk

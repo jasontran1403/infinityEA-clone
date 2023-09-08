@@ -1758,6 +1758,13 @@ header .mobile-menu {
   height: auto;
 }
 
+.ref-text {
+  font-weight: 800;
+  font-size: 50px;
+  color: yellow;
+  text-decoration: overline;
+}
+
 /* [ RESPONSIVE ] */
 /*================================================== */
 
