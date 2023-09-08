@@ -11,7 +11,7 @@ const BlogPost = () => {
         <i className="fa-solid fa-arrow-left"></i>
       </a>
       <div className="blog-content">
-        <h1>Forex Overview</h1>
+        <h1>Hướng dẫn đăng kí tài khoản Exness</h1>
         {/* ARTICLE STARTS */}
         <div className="main-post">
           {/* META STARTS */}
@@ -32,25 +32,18 @@ const BlogPost = () => {
           {/* META ENDS */}
           {/* CONTENT STARTS */}
           <h3>The meaning of currency pairs in Forex</h3>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/59c5UUu1C4g" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/yoxrePKUllw?si=mowr7TN5_y8D9auu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="post-content">
             <p>
-              In Forex trading, currency pairs hold significant importance as they represent the relative value of one currency against another.
-              Each pair consists of a base currency and a quote currency,
-              and their exchange rate determines how much of the quote currency is needed to purchase one unit of the base currency.
+              Bước 1: Truy cập trang web chính thức của Exness
+              Bước 2: Tại giao diện trang chủ, bấm vào mục Đăng Nhập, sau đó chọn Tạo Tài Khoản.
+              Điền các trường cần thiết, sau đó tại mục Mã giới thiệu nhập mã giới thiệu như sau: 
+            </p> 
+            <p class = "ref-text">
+              3hjpuzkltk
             </p>
             <p>
-              Understanding the meaning of currency pairs is crucial for traders as it provides insights into the global economic landscape and market dynamics.
-              For example, major currency pairs like EUR/USD, USD/JPY, and GBP/USD are closely monitored as they involve currencies of major economies,
-              reflecting broader market trends and investor sentiment.
-
-              Exotic currency pairs, on the other hand, involve currencies of smaller or emerging economies and are characterized by lower liquidity and higher volatility.
-              Trading these pairs requires careful analysis and risk management.
-            </p>
-            <p>
-              In essence, the significance of currency pairs lies in their ability to reveal the underlying economic conditions and geopolitical factors influencing the global financial markets.
-              By grasping these intricacies, traders can make informed decisions and capitalize on market opportunities, 
-              thus enhancing their chances of success in the Forex arena.
+              Lưu ý: hãy sao chép và dán mã để tránh sai sót. Sau đó bấm tiếp tục, chúc mừng bạn đã tạo thành công tài khoản Exness của bạn
             </p>
           </div>
           {/* CONTENT ENDS */}
