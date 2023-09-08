@@ -45,12 +45,12 @@ const Index = () => {
             <Separator type={"up"} />
             <Contact />
             <Separator type={"down"} />
-            <Clients />
-            <Separator type={"up"} />
+            {/* <Clients />
+            <Separator type={"up"} /> */}
             <Blog />
-            <Separator type={"down"} />
-            <Network />
             <Separator type={"up"} />
+            <Network />
+            <Separator type={"down"} />
             <Copyright />
 
             {/* <Home />
