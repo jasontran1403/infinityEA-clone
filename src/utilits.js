@@ -235,6 +235,12 @@ export const jqueryFuntion = () => {
         scrollInertia: 1500,
       });
     });
+    
+    $("#network-link").on("click", function () {
+      $("#wrapper").mCustomScrollbar("scrollTo", "#network", {
+        scrollInertia: 1500,
+      });
+    });
 
     $("#menu li a").on("click", function () {
       $("#checkboxmenu").trigger("click");
