@@ -43,25 +43,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Phương án :
                   </span>
-                  <span>One-Way Trade</span>
+                  <span>Sóng Hồi</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Developers :
+                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
                   </span>
                   <span>Infinity Team</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Thời gian :
                   </span>
-                  <span>3 months</span>
+                  <span>3 Tháng</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Nền tảng :
                   </span>
                   <span>MQL4</span>
                 </li>
@@ -96,25 +96,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Dự án :
                   </span>
-                  <span>Analysis Strategy</span>
+                  <span>Phân tích kỹ thuật</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> Khách Hàng :
                   </span>
                   <span>Smart Risk</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Thời gian :
                   </span>
                   <span>1 months</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Nền tảng :
                   </span>
                   <span>After Effects, AE, MQL4</span>
                 </li>
@@ -151,25 +151,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Phương án :
                   </span>
-                  <span>Reducing Negative Pos</span>
+                  <span>Giảm vị thế xấu</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Developers :
+                    <i className="fa-regular fa-user" /> Đội ngữ phát triển :
                   </span>
                   <span>Infinity Team</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Thời gian :
                   </span>
-                  <span>1 months</span>
+                  <span>1 Tháng</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Nền tảng :
                   </span>
                   <span>MQL4</span>
                 </li>
@@ -208,25 +208,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Phương án :
                   </span>
-                  <span>Automated Del-Order</span>
+                  <span>Tự Động Xóa Lệnh</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Developers :
+                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
                   </span>
                   <span>Infinity Team</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Thời gian :
                   </span>
-                  <span>5 month</span>
+                  <span>5 Tháng</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Nền Tảng :
                   </span>
                   <span>MQL4</span>
                 </li>
@@ -265,25 +265,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Phương án :
                   </span>
-                  <span>Two-way Trade</span>
+                  <span>Giao dịch 2 chiều</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Developers :
+                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
                   </span>
                   <span>Infinity Team</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Thời Gian :
                   </span>
                   <span>2 month</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Nền Tảng :
                   </span>
                   <span>MQL4</span>
                 </li>
