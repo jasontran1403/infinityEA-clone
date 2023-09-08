@@ -11,7 +11,7 @@ const BlogPost = () => {
         <i className="fa-solid fa-arrow-left"></i>
       </a>
       <div className="blog-content">
-        <h1>About us</h1>
+        <h1>Chuyển nội bộ </h1>
         {/* ARTICLE STARTS */}
         <div className="main-post">
           {/* META STARTS */}
@@ -22,7 +22,7 @@ const BlogPost = () => {
             </div>
             <div className="d-flex align-items-center">
               <i className="fa-solid fa-tag" />
-              <span>Aboutus, Brand</span>
+              <span>Chuyển tiền</span>
             </div>
             <div className="d-flex align-items-center">
               <i className="fa-regular fa-comments" />
@@ -31,27 +31,21 @@ const BlogPost = () => {
           </div>
           {/* META ENDS */}
           {/* CONTENT STARTS */}
-          <h3>Infinity EA - aiming for infinity of Trading Market. </h3>
-          <img src="assets/blog/blog-post-3.jpg" alt="Blog image" />
+          <h3>Hướng dẫn chuyển tiền nội bộ giữa các tài khoản Exness</h3>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/3_bSlu0Oxck?si=B1bgjz4vL18nMT_e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="post-content">
             <p>
-              In the dynamic world of trading, where opportunities seem limitless yet uncertainties abound, the quest for a reliable and profitable solution remains ever-present. 
-              Enter Infinity EA - a trading companion crafted with a vision to transcend boundaries and strive for unending possibilities in the financial markets.
-              At its core, Infinity EA represents a commitment to continuous growth and adaptability, much like the infinite nature of the cosmos. 
-              This sophisticated trading algorithm leverages cutting-edge technology and years of experience to navigate the complexities of the market with precision and finesse.
+              B1: Đăng nhập vào tài khoản Exness của bạn, chọn tài khoản mà bạn muốn chuyển tiền nội bộ sau đó nhấn "Chuyển Tiền"
             </p>
             <p>
-              The name "Infinity EA" embodies a belief in unbounded potential, urging traders to think beyond conventional limitations and explore the uncharted territories of trading success. 
-              Like the vast expanse of the universe, the Forex market offers an infinite array of currency pairs, investment opportunities, and ever-changing trends. 
-              Infinity EA is poised to seize these possibilities and harness them to our advantage.
-              Guided by a team of industry experts, Infinity EA is constantly evolving and learning from market dynamics, adapting to shifts and challenges. 
-              It operates 24/5, tirelessly scanning the financial landscape for opportunities that others might overlook.
+              B2: Ở giao diện chọn phương thức, chọn mục "Chuyển đến một người dùng khác" sau đó nhập số ID và Email dùng để tạo tài khoản Exness của người nhận
             </p>
             <p>
-              Embracing the concept of infinity, this AI-powered trading companion aspires to unlock untapped potential for traders, empowering them with insightful analysis, real-time data, and automated execution. 
-              The goal is simple yet profound - to achieve consistent profitability and growth, allowing traders to transcend conventional boundaries and venture fearlessly into the realm of infinite possibilities.
-              In conclusion, Infinity EA stands as a symbol of resilience, innovation, and ceaseless pursuit of success in the trading arena. Its name embodies the unending drive to explore, adapt, and prosper, unlocking the door to a realm where limits are but a distant memory. 
-              With Infinity EA by your side, the journey to financial success becomes an expedition into the boundless world of trading possibilities.
+              B3: Nhập số tiền mà bạn muốn chuyển, sau đó bấm "Xác Nhận" và chờ hệ thống gửi mã OTP về số điện thoại của bạn - sau đó nhập mã OTP và bấm Hoàn Tất.
+            </p>
+
+            <p>
+              Sau khi hoàn thành tất cả các bước trên, Exness sẽ tự động chuyển tiền từ tài khoản của bạn đến ID nhận. Chúc bạn thành công !!
             </p>
           </div>
           {/* CONTENT ENDS */}

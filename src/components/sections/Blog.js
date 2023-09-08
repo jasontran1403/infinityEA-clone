@@ -29,7 +29,7 @@ const Blog = () => {
                   Hướng dẫn tạo tài khoản Exness.
                 </span>
                 <p>
-                  Stay informed with the latest Forex news updates, enabling you to make more accurate investment decisions.
+                  Hướng dẫn đăng kí tài khoản giao dịch Exness
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
@@ -57,10 +57,10 @@ const Blog = () => {
               </span>
               <div className="content">
                 <span className="title">
-                  Hướng dẫn mở tài khoản trade Exness - Standard Cent
+                  Hướng dẫn nạp tiền vào tài khoản Exness
                 </span>
                 <p>
-                  Exness is one of the leading and reputable forex brokers in the industry. Established in 2008
+                  Hướng dẫn nạp tiền vào tài khoản giao dịch Exness Thông qua VietQR
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
@@ -86,10 +86,10 @@ const Blog = () => {
               </span>
               <div className="content">
                 <span className="title">
-                  Hướng dẫn thiết lập quyền chỉ xem cho tài khoản Trade
+                  Hướng dẫn chuyển tiền nội bộ Exness
                 </span>
                 <p>
-                  Why Infinity EA - Exploring the Significance of Our Name. When our started, and goal ?
+                  hướng dẫn chuyển tiền nội bộ giữa các tài khoản Exness
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
