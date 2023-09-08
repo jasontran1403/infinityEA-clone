@@ -116,15 +116,15 @@ const Blog = () => {
               </span>
               <div className="content">
                 <span className="title">
-                  Hướng dẫn nạp tiền vào tài khoản Exness
+                  Huớng dẫn thiết lập quyền tài khoản Exness
                 </span>
                 <p>
-                  Stay informed with the latest Forex news updates, enabling you to make more accurate investment decisions.
+                  Hướng dẫn thiết lập quyền chỉ xem tài khoản giao dịch Exness
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>9 Apr 2022</span>
+                    <span>9 Jun 2023</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />

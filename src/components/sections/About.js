@@ -35,16 +35,16 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Skills :</span>
-                    <span>Presentation and negotiation</span>
-                    <p>Coaching ang traing how to sell ILP</p>
+                    <span>Kinh nghiệm :</span>
+                    <span>20 năm trong lĩnh vực đào tạo  </span>
+                    <p>& kèm cặp tài chính & bảo hiểm cá nhân</p>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Nationality :</span>
+                    <span>Quốc tịch :</span>
                     <span>VietNam</span>
                   </span>
                 </span>
@@ -52,7 +52,7 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Position :</span>
+                    <span>Chức vụ:</span>
                     <span>RD (Regional Director, FWD)</span>
                   </span>
                 </span>
@@ -60,8 +60,8 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Languages :</span>
-                    <span>English</span>
+                    <span>Ngôn ngữ :</span>
+                    <span>Tiếng anh, Tiếng Việt</span>
                   </span>
                 </span>
               </li>
@@ -70,7 +70,7 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Address :</span>
+                    <span>Địa chỉ :</span>
                     <span>Can Tho, HCMC</span>
                   </span>
                 </span>
@@ -78,7 +78,7 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Phone :</span>
+                    <span>Số Điện Thoại :</span>
                     <span>+84939635089</span>
                   </span>
                 </span>
@@ -91,7 +91,7 @@ const About = () => {
                   </span>
                 </span>
               </li>
-              <li>
+              {/* <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
                     <span>Accomplishments :</span>
@@ -100,7 +100,7 @@ const About = () => {
                     <span>Building 833 agency & 99 Agency leaders at the end of 31 July 2022.</span>
                   </span>
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
