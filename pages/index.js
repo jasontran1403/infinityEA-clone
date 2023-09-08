@@ -49,8 +49,10 @@ const Index = () => {
             <Separator type={"up"} />
             <Blog />
             <Separator type={"down"} />
-            <Network />
-            <Separator type={"up"} />
+            {email && <>
+              <Network />
+              <Separator type={"down"} /> 
+            </>}
             <Copyright />
 
             {/* <Home />
