@@ -34,7 +34,24 @@ const Index = () => {
         <Header />
         <div id="wrapper">
           <main className="flex-column-mobile">
-            <Home />
+          <Home />
+            <About />
+            <Separator type={"down"} />
+            <Facts />
+            <Separator type={"up"} />
+            <Portfolio />
+            <Separator type={"down"} />
+            <Testimonials />
+            <Separator type={"up"} />
+            <Contact />
+            <Separator type={"down"} />
+            <Clients />
+            <Separator type={"up"} />
+            <Blog />
+            <Separator type={"down"} />
+            <Copyright />
+
+            {/* <Home />
             <Separator type={"up"} />
             <About />
             <Separator type={"down"} />
@@ -52,7 +69,7 @@ const Index = () => {
               <Network />
               <Separator type={"down"} /> 
             </>}
-            <Copyright />
+            <Copyright /> */}
           </main>
         </div>
         <ScrollBar />
