@@ -49,7 +49,9 @@ export const jqueryFuntion = () => {
     var contactwidth =
       portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
     var blogwidth =
-      contactwidth + $(".blog").width() + $(".copyright").width() - 10;
+      contactwidth + $(".blog").width() + $(".network").width() - 10;
+    var networkwidth = 
+      blogwidth + $(".network").width() + $(".coppyright").width() -10;
 
     /* ----------------------------------------------------------- */
     /*  HORIZONTAL SCROLL & REVEAL ANIMATIONS
@@ -115,7 +117,17 @@ export const jqueryFuntion = () => {
       ) {
         $(".menu ul li span").removeClass("active");
         $("#blog-link").addClass("active");
-      } else {
+
+      }
+      else if (
+        Math.abs(parseInt($(".mCSB_container").css("left"))) > blogwidth &&
+        Math.abs(parseInt($(".mCSB_container").css("left"))) < networkwidth
+      ) {
+        $(".menu ul li span").removeClass("active");
+        $("#network-link").addClass("active");
+      
+      }
+      else {
         $(".menu ul li span").removeClass("active");
         $("#home-link").addClass("active");
       }
