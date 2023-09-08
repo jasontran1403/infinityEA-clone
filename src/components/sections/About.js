@@ -183,7 +183,7 @@ const About = () => {
               <span>
                 <i className="devicon-nodejs-plain" />
               </span>
-              <h4> vào/thoát lệnh </h4>
+              <h4> Vào/thoát lệnh </h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}

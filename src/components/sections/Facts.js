@@ -11,7 +11,7 @@ const Facts = () => {
             <div>
               <h3>56+</h3>
               <p>
-                month of<span>experience</span>
+                Tháng<span>Kinh nghiệm</span>
               </p>
             </div>
           </div>
@@ -26,7 +26,7 @@ const Facts = () => {
             <div>
               <h3>10%</h3>
               <p>
-                Profits<span>per Month</span>
+                Lợi nhuận<span>hàng tháng</span>
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Facts = () => {
             <div>
               <h3>50%</h3>
               <p>
-                Protection<span>Level 2</span>
+                Mốc bảo vệ<span>Level 2</span>
               </p>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Facts = () => {
             <div>
               <h3>30%</h3>
               <p>
-                Protection<span>Lever 1</span>
+                Mốc bảo vệ<span>Lever 1</span>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Facts = () => {
             <div>
               <h3>100+</h3>
               <p>
-                Customer on <span>Mekong Delta Area</span>
+                Khách hàng <span>khu vực miền Tây</span>
               </p>
             </div>
           </div>
