@@ -93,7 +93,9 @@ export const jqueryFuntion = () => {
     }
 
     function checkScroll() {
-      console.log(blogwidth, contactwidth, networkwidth, $(".copyright").width());
+      console.log("Blog" + blogwidth);
+      console.log("Contact" + contactwidth);
+      console.log("Network" + networkwidth);
       if (
         Math.abs(parseInt($(".mCSB_container").css("left"))) > homewidth &&
         Math.abs(parseInt($(".mCSB_container").css("left"))) < aboutwidth
