@@ -49,7 +49,9 @@ export const jqueryFuntion = () => {
     var contactwidth =
       portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
     var blogwidth =
-      contactwidth + $(".blog").width() + $(".copyright").width() - 10;
+      contactwidth + $(".blog").width() + $(".network").width() - 10;
+    var networkwidth =
+    blogwidth + $(".network").width() + $(".copyright").width();
 
     /* ----------------------------------------------------------- */
     /*  HORIZONTAL SCROLL & REVEAL ANIMATIONS
@@ -91,6 +93,7 @@ export const jqueryFuntion = () => {
     }
 
     function checkScroll() {
+      console.log(blogwidth, contactwidth, networkwidth, $(".copyright").width());
       if (
         Math.abs(parseInt($(".mCSB_container").css("left"))) > homewidth &&
         Math.abs(parseInt($(".mCSB_container").css("left"))) < aboutwidth
@@ -111,7 +114,7 @@ export const jqueryFuntion = () => {
         $("#contact-link").addClass("active");
       } else if (
         Math.abs(parseInt($(".mCSB_container").css("left"))) > contactwidth &&
-        Math.abs(parseInt($(".mCSB_container").css("left"))) < blogwidth
+        Math.abs(parseInt($(".mCSB_container").css("left"))) < networkwidth
       ) {
         $(".menu ul li span").removeClass("active");
         $("#blog-link").addClass("active");
@@ -174,8 +177,8 @@ export const jqueryFuntion = () => {
         "",
         document.title,
         window.location.origin +
-          window.location.pathname +
-          window.location.search
+        window.location.pathname +
+        window.location.search
       );
     }
 
@@ -236,7 +239,7 @@ export const jqueryFuntion = () => {
         scrollInertia: 1500,
       });
     });
-    
+
     $("#network-link").on("click", function () {
       $("#wrapper").mCustomScrollbar("scrollTo", "#network", {
         scrollInertia: 1500,

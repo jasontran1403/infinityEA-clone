@@ -2,6 +2,7 @@ import React from "react";
 import Signin from "./Signin";
 import LinkRef from "./LinkRef";
 import Axios from "axios";
+import { normalAlert } from "./Swal";
 
 const Header = () => {
   const [isSignInModalOpen, setIsSignInModalOpen] = React.useState(false);

@@ -85,8 +85,8 @@ const About = () => {
 
   return (
     <section
-      className="portfolio main-section flex-column-mobile"
-      id="portfolio"
+      className="portfolio network main-section flex-column-mobile"
+      id="network"
     >
       {/* TITLE STARTS */}
       <div className="custom-title">

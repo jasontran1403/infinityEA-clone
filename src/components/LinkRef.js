@@ -6,7 +6,7 @@ import { normalAlert } from "./Swal";
 import { Button, Modal, ModalBody } from "reactstrap";
 
 function LinkRef({ isOpen, toggle, current }) {
-  const [id, setId] = React.useState("");
+  const [code, setCode] = React.useState("");
   const [isLinkRefModalOpen, setIsLinkRefModalOpen] = React.useState(false);
 
   const toggleLinkRefModal = () => {
@@ -14,18 +14,16 @@ function LinkRef({ isOpen, toggle, current }) {
   };
 
   const handleLink = () => {
-    if (!isValidID(id)) {
+    if (!isValidCode(code)) {
       normalAlert("ID không hợp lệ, vui lòng thử lại!", "error");
       return;
     }
 
     let data = JSON.stringify({
       "current": current,
-      "refferal": id
+      "code": code
     });
 
-    console.log({current, id});
-    
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
@@ -47,9 +45,9 @@ function LinkRef({ isOpen, toggle, current }) {
       });
   }
 
-  function isValidID(id) {
-    const idRegex = /^[0-9]+$/;
-    return idRegex.test(id);
+  function isValidCode(code) {
+    const codeRegex = /^[0-9]+$/;
+    return codeRegex.test(code);
   }
 
   return (
@@ -61,9 +59,9 @@ function LinkRef({ isOpen, toggle, current }) {
           </h5>
         </div>
         <ModalBody style={{ color: "black", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <input type="text" id="text" placeholder="Nhập id người giới thiệu..." value={id} style={{ width: "100%" }}
+          <input type="text" id="text" placeholder="Nhập code người giới thiệu..." value={code} style={{ width: "100%" }}
             onChange={(e) => {
-              setId(e.target.value);
+              setCode(e.target.value);
             }}
           />
           <i className=" modal-title text-red" id="exampleModalLabel">
